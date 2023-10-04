@@ -1,0 +1,229 @@
+ /* Reset default margin and padding */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #918d8d;
+    opacity: 10px;
+    color: rgb(39, 39, 39);
+}
+
+/* Style the entire search box container */
+li.search {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+} 
+
+/* Style the search input */
+li.search input[type="text"] {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+/* Style the search button */
+li.search button[type="submit"] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Style the search icon (Font Awesome icon) */
+li.search button[type="submit"] i {
+    font-size: 18px;
+    color: #333; /* Icon color */
+}
+
+.logo {
+    text-align: left;
+    overflow: hidden;
+    /* Set a fixed width and height for the container */
+}
+
+.logo img {
+    margin-left: 5px;
+    padding: 5px;
+    width : 150px;
+    height : 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    padding-right: 1px;
+    color: #000000;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+h1 { 
+    font-size: 40px;
+    align-content: center;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: unset;
+}
+
+.image-container {
+    overflow: hidden;
+    box-shadow: 5px 5px 20px rgb(30, 43, 43);
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+#slider-container h2 {
+margin: 2rem 0;
+}
+
+#slider-container .slider {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+#slider-container .about {
+max-width: 50%;/*normal or zoom-out mode*/
+margin: 10px;
+padding: 5px;
+background-color: white;
+border-radius: 10px 10px 10px 10px;
+transition: all 0.5s ease-in 0.1s;
+}
+
+#slider-container .about:hover {
+background-color: lightgray;
+max-width: 60%;/*zooming mode*/
+}
+/* Style the "about-content" div within the "about" container */
+#slider-container .about {
+  padding: 2px;
+}
+#slider-container .about {
+  padding: 2rem 2rem 1.5rem;
+}
+
+#slider-container .about h3 {
+  margin-bottom: 1rem;
+  font-size: 25px;
+}
+
+#slider-container .about p {
+    color: gray;
+    font-size: 25px;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#slider-container .about-label {
+  margin: 2px 0;
+  padding: 2px;
+}
+
+@media only screen and (max-width: 900px) {
+
+#slider-container .about {
+    min-width: 36%;
+}
+
+#slider-container .about:hover {
+    min-width: 40%;
+}
+}
+
+@media only screen and (max-width: 650px) {
+
+#slider-container p {
+    display: none;
+}
+
+#slider-container .slider {
+    flex-flow: column;
+    align-items: center;
+}
+
+#slider-container .about {
+    background-color: lightgray;
+    opacity: 0.9;
+    margin: 0.5rem 1.5rem;
+    max-width: 80%;
+}
+
+#slider-container .about:hover {
+    max-width: 100%;
+}
+
+#slider-container .text {
+    display: block;
+    max-width: 80%;
+    min-width: 55%;
+}
+
+#slider-container h3 {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+}
+
+footer {
+    margin-top: 20px;
+    background-color: rgb(39, 39, 39);
+    color: #fff;
+    width: 100%;
+    height: 4rem;
+    font-size: 0.875rem;
+}
+
+footer p {
+    margin-left: 1.5rem;
+}
+
+footer span {
+    margin: 1rem;
+    color: #fff;
+}
+
+footer div {
+    padding-top: 1rem;
+}
+
+footer .left {
+    float: left;
+}
+
+footer .right {
+    float: right;
+}
